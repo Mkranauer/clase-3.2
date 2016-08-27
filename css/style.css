@@ -1,0 +1,99 @@
+h1 {
+	color: white;
+	background: #444;
+	font-size: 50px;
+	font-weight: bold; /*negrita u otra propiedad*/
+	/*font-style: italic;*/
+	/*letter-spacing: -4px;/*separacion entre caracteres*/
+	line-height: 100px;/*espacio de interlineado*/
+	color: blue;/*en este punto como repito el color siempre el ultimo elemento va a tener importancia*/
+	font-family: 'Indie Flower', cursive;
+	/*otros valores pueden ser:
+	"font-family: times new roman", time o serif;
+	font-family: Verdana, Tahoma, sans-serif;
+	font-family:*/
+}
+
+h1{
+	font-family: 'Indie Flower', cursive;
+}
+
+.recuadro2 h2{ /* el espacio marca la linea de herencia, es decir a quien se le da la modificacion*/
+	color: red	;
+}
+
+h1, h2{ /*la , marca tanto a este como a este*/
+	text-decoration: underline;
+	text-transform: uppercase; /*las opciones de transformacion pueden ser
+	uppercase: mayusculas
+	lowercase: minusculas
+	capitalize la primera letra en mayuscula y el resto en minuscula
+	none: el texto queda tal cual fue escrito en el html*/
+	text-shadow:5px 5px 5px #aaa;
+}
+
+.cuadrados article {
+	width: 100px;
+	height: 100px;
+	box-shadow: 20px 20px 20px #999;
+}
+
+.cuadrados .cuadrado1 {
+	background: red;
+	width: 50px;
+}
+
+.cuadrado2{
+	background: blue;
+}
+
+.cuadrado3{
+	background: green;
+}
+
+ul.lista li:first-child{
+	background: yellow;
+}
+
+ul.lista li:last-child{
+	background:grey;
+}
+
+ul.lista li:nth-child(3){
+	background: magenta;
+}
+.link{
+	color: red;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 20px;	
+}
+
+.link:hover{
+	background: magenta;
+	color: #9c9c9c;
+}
+
+ul.lista li {
+	list-style: none;
+}
+
+ul.lista li:first-child:hover{
+	background: blue;
+	color:yellow;
+}
+ul.lista li:nth-child(2):hover{
+	background: green;
+	color: white;
+}
+ul.lista li:nth-child(3):hover{
+	background: blue;
+	color:yellow;
+}
+ul.lista li:nth-child(4):hover{
+	background: red;
+	color:white;
+}
+ul.lista li:last-child:hover{
+	background: black;
+	color: white;
